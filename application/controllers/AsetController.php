@@ -20,4 +20,27 @@ public function __construct()
       return $this->load->view('v_tambah');
   }
 
+
+
+  public function proses_tambah () 
+  {
+    $nama_aset = $this->input->post('txtnama_aset');
+    $jenis = $this->input->post('txtjenis');
+    $lokasi = $this->input->post('txtlokasi');
+    $jumlah = $this->input->post('txtjumlah');
+
+
+    $data_input = [
+      // 'id' => $id,
+      'nama_aset' => $nama_aset,
+      'jenis' => $jenis,
+      'lokasi' => $lokasi,
+      'jumlah' => $jumlah
+    ];
+
+    $simpan = $this->AsetModel->add($data_input);
+    redirect('Asetcontroller/index');
+    // var_dump($data_input);
+
+  }
 }

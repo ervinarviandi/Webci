@@ -18,11 +18,15 @@
   body {
     font-family: "Roboto", sans-serif;
   }
+
+  .card {
+    margin-top: 120px;
+  }
 </style>
 <body>
-<div class="container">
+<!-- <div class="container">
 <h2 class="alert alert-info mt-5 mb- text-center">Moh Ervin Arviandi/1901040018</h2>
-</div>
+</div> -->
 
 <!-- Form -->
 <div class="container">

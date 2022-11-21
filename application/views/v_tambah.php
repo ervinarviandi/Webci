@@ -20,32 +20,33 @@
   }
 </style>
 <body>
-<div class="container">
+<!-- <div class="container">
 <h2 class="alert alert-info mt-5 mb- text-center">Moh Ervin Arviandi/1901040018</h2>
-</div>
+</div> -->
 
 
 <div class="container">
-    <h3></h3>
+    <h3>Tambah Data</h3>
+    <hr>
 
 
 
-<form action="<?= site_url('simpanTambah') ?>" method="POST">
+<form action="<?=site_url('AsetController/proses_tambah')?>" method="POST">
 <div class="mb-3">
     <label for="">Nama Aset</label>
-    <input type="text" name="txt-nama" class="form-control">
+    <input type="text" name="txtnama_aset" class="form-control">
 </div>
 <div class="mb-3">
     <label for="">Jenis Aset</label>
-    <input type="text" name="txt-jenis" class="form-control">
+    <input type="text" name="txtjenis" class="form-control">
 </div>
 <div class="mb-3">
     <label for="">Lokasi Aset</label>
-    <input type="text" name="txt-lokasi" class="form-control">
+    <input type="text" name="txtlokasi" class="form-control">
 </div>
 <div class="mb-3">
     <label for="">Jumlah Aset</label>
-    <input type="text" name="txt-jumlah" class="form-control">
+    <input type="text" name="txtjumlah" class="form-control">
     <input type="submit" value="Simpan Data" class="btn btn-primary">
     <a href="<?=site_url('AsetController/index');?>" class="btn btn-warning">Kembali</a>
 </div>
