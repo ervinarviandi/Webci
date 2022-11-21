@@ -41,6 +41,7 @@ public function __construct()
     $simpan = $this->AsetModel->add($data_input);
     redirect('Asetcontroller/index');
     // var_dump($data_input);
+    // var dump
 
   }
 }
